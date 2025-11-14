@@ -25,12 +25,6 @@ npm install -g ghcm
 
 ## Usage
 
-### Basic cloning
-```bash
-# Instead of: git clone https://github.com/Kielx/terminal-portfolio.git
-ghcm Kielx/terminal-portfolio
-```
-
 ### Custom directory name
 ```bash
 ghcm microsoft/vscode -d my-vscode-fork
@@ -54,7 +48,7 @@ ghcm --help
 
 ```bash
 # Clone a repository
-ghcm Kielx/terminal-portfolio
+ghcm Beratkan15/GHCM
 
 # Clone with custom directory name
 ghcm facebook/react -d my-react
@@ -92,22 +86,6 @@ ghcm
 - Git installed on your system
 - Internet connection for cloning repositories
 
-## Development
-
-```bash
-# Clone this repository
-git clone https://github.com/yourusername/ghcm.git
-
-# Install dependencies
-npm install
-
-# Run locally
-npm start
-
-# Test the CLI
-node bin/ghcm.js Kielx/terminal-portfolio
-```
-
 ## Dependencies
 
 - `chalk` - Terminal colors
@@ -135,7 +113,7 @@ MIT License - see LICENSE file for details
 
 | Traditional Way | GHCM Way |
 |----------------|---------|
-| `git clone https://github.com/Kielx/terminal-portfolio.git` | `ghcm Kielx/terminal-portfolio` |
+| `git clone https://github.com/Beratkan15/GHCM.git` | `ghcm Beratkan15/GHCM` |
 | Plain terminal output | Beautiful colored interface |
 | No progress indication | Animated loading spinners |
 | English only | Multi-language support |
