@@ -1,0 +1,134 @@
+/* GHCM Extension Styles */
+
+.ghcm-tab {
+    position: relative;
+}
+
+.ghcm-tab.active {
+    background-color: var(--color-neutral-muted) !important;
+    color: var(--color-fg-default) !important;
+}
+
+.ghcm-icon {
+    font-size: 16px;
+    color: #4a90e2;
+}
+
+.ghcm-panel {
+    padding: 16px;
+    border: 1px solid var(--color-border-default);
+    border-radius: 6px;
+    background-color: var(--color-canvas-subtle);
+    margin-top: 8px;
+}
+
+.ghcm-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ghcm-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.ghcm-logo {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--color-fg-default);
+}
+
+.ghcm-subtitle {
+    font-size: 14px;
+    color: var(--color-fg-muted);
+}
+
+.ghcm-input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ghcm-input {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid var(--color-border-default);
+    border-radius: 6px;
+    background-color: var(--color-canvas-default);
+    color: var(--color-fg-default);
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    font-size: 14px;
+    cursor: text;
+}
+
+.ghcm-input:focus {
+    outline: none;
+    border-color: var(--color-accent-emphasis);
+    box-shadow: 0 0 0 3px var(--color-accent-muted);
+}
+
+.ghcm-copy-btn {
+    padding: 8px;
+    border: 1px solid var(--color-border-default);
+    border-radius: 6px;
+    background-color: var(--color-btn-bg);
+    color: var(--color-btn-text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.ghcm-copy-btn:hover {
+    background-color: var(--color-btn-hover-bg);
+    border-color: var(--color-btn-hover-border);
+}
+
+.ghcm-copy-btn:active {
+    background-color: var(--color-btn-active-bg);
+}
+
+.ghcm-info {
+    font-size: 14px;
+    color: var(--color-fg-muted);
+}
+
+.ghcm-info p {
+    margin: 0 0 8px 0;
+}
+
+.ghcm-info ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.ghcm-info li {
+    margin: 4px 0;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .ghcm-icon {
+        color: #58a6ff;
+    }
+}
+
+/* Animation for tab switching */
+.ghcm-panel {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
