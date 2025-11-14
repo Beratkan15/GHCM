@@ -25,6 +25,10 @@ npm install -g ghcm
 
 ## Usage
 
+```bash
+ghcm Beratkan15/GHCM
+```
+
 ### Custom directory name
 ```bash
 ghcm microsoft/vscode -d my-vscode-fork
